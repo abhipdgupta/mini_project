@@ -1,0 +1,63 @@
+{
+    "success": true,
+    "computer-science-and-engineering": [
+        {
+            "id": 1,
+            "title": "About",
+            "content": "The Department of Computer Science & Engineering was established in the year 1987. This department has an intake capacity of 60 students. The curriculum of the department is as per AICTE norms. Computer Science and Engineering department has laboratories like\n\nObject Oriented Programming using C++ Laboratory, Data Structure and Algorithms Laboratory,Operating System Laboratory, IT Workshop (SciLaboratory/Python Laboratory, Database Management System Laboratory, Web Programming Laboratory, Compiler Design Laboratory, Computer Networks Laboratory. The department has a number of servers and nodes to cater to the programming needs of the students."
+        },
+        {
+            "id": 2,
+            "title": "Vision",
+            "content": "To become a prominent department of Computer Science and Engineering for producing quality human resources to meet the needs of the industry and society"
+        },
+        {
+            "id": 3,
+            "title": "Mission",
+            "content": "MI: To impart quality education through well-designed curriculum and academic facilities to meet the computing needs of the industry and society\n\nM2: To inculcate the spirit of creativity, team work, innovation, entrepreneurship and professional ethics among the students\n\nM3: To facilitate effective interactions to foster networking with alumni, industries, institutions of learning and research and other stake-holders\n\nM4: To promote research and continuous learning in the field of Computer Science and Engineering"
+        },
+        {
+            "id": 4,
+            "title": "PROGRAM EDUCATION OBJECTIVES",
+            "content": "PEO: Graduates will have creativity and ability to specify, design, implement, test and maintain Software systems.\n\nPEO2: Graduates will communicate effectively, work collaboratively and exhibit high level of professionalism and ethical responsibility for pursuing a successful career in Computer Science and Engineering\n\nPEO3: Graduates will engage in innovation and entrepreneurship\n\nPEO4: Graduates will be able to pursue higher studies in engineering\n\nPEOS: Graduates will have imbibed in them the spirit of research and continuous self-learning to adapt to the changing professional and societal needs"
+            ,
+            "path":"D:\\mini_project\\server\\uploads\\notice_pdf\\1681659082427-6th Semester.pdf"
+        },
+        {
+            "id": 5,
+            "title": "PROGRAM SPECIFIC OUTCOMES",
+            "content": "PSO 1. Gain ability to employ modern computer languages, environments and platforms in creating innovative career paths.\n\nPSO 2. Achieve an ability to implement, test and maintain computer based system that fulfils the desired needs"
+        }
+    ],
+    "mechanical-engineering": [
+        {
+            "id": 1,
+            "title": "About",
+            "content": "The Department of Mechanical Engineering was introduced in the college in the year 1962 with an initial intake capacity of 30 students per year. It was subsequently increased to present class size of 90 students. Over the years, the department has earned a place of high repute through its quality teaching and rigorous practical training.\n\nThe department has a strength of three Professors, six Asst. Professors, thirteen Lecturers and six technicians. The faculties\n\ncomprise of specialised persons in designs, Dynamics, Fluid machineries, Non conventional energy, Quality control, Fluid\n\ndynamics, Operation research, Industrial Engineering, Pollution, Production Systems, Computer Integrated Manufacturing,Robotics etc. They have published several technical papers in prestigious National and International Journals and International Conferences."
+        },
+        {
+            "id": 2,
+            "title": "Vision",
+            "content": "In pursuit of a centre of excellence in mechanical engineering and maintain it through a continuous effective learning-teaching process and need-based research."
+        },
+        {
+            "id": 3,
+            "title": "Mission",
+            "content":"1. To adopt effective learning-teaching processes to build students capacity and enhance their skills.\n\n2.7To nurture the students to adapt to the changing academic needs and industrial expectations.\n\n3.To develop professionals to meet industrial and societal challenges.\n\n4.To motivate students for entrepreneurial ventures for nation-building."
+        },
+        {
+            "id": 4,
+            "title": "PROGRAM EDUCATION OBJECTIVES",
+            "content": "1. Competency in domain knowledge, expertise and self-confidence for professional carrier, advanced studies, R&D, entrepreneurial ventures activities, and facing challenges in professional life.\n\n2. Design, develop, and improve effective domain based systems, tools and techniques that are socio-economically feasible and acceptable, and those technologies / developments for improving quality of life.\n\n3. Demonstrate professionalism through effective communication skill, ethical and societal commitment, team spirit, leadership quality through life-long learning to realize career and organisational goal and participate in nation building."
+        },
+        {
+            "id": 5,
+            "title": "PROGRAM SPECIFIC OUTCOMES",
+            "content": "1. Capable to establish a career in Mechanical and interdisciplinary areas with the commitment to the society and the nation.\n\n2. Graduates will be armed with engineering principles, analysing tools and techniques and creative ideas to analyse,interpret and improve mechanical engineering systems."
+        }
+    ],
+    "civil-engineering":[],
+    "electrical-engineering":[],
+    "instrumentation-engineering":[],
+    "mca":[]
+}

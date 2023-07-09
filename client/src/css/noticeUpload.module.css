@@ -1,0 +1,60 @@
+.form{
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem auto 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    width: 400px;
+    justify-content: center;
+    /* OLD */
+    /* -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75); */
+  
+    /* NEW */
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+   
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+.form input[type="text"]{
+    height: 40px;
+    border: 2px solid darkcyan  ;
+    
+}
+.form input{
+    margin: 1rem 0;
+}
+.form textarea{
+    resize: none;
+    height: 200px;
+    border: 2px solid darkcyan  ;
+    margin: 1rem 0;
+}
+.form label{
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.form select{
+    margin: 1rem 0;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
+.form button{
+    all: unset;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: .5rem;
+    text-align: center;
+    border-radius: .5rem;
+}

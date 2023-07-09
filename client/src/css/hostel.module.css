@@ -1,0 +1,48 @@
+
+.hostel_container {
+  width: 100vw;
+  width: 100%;
+  padding: 5rem 0;
+  /* border: 2px solid red; */
+}
+.hostel_container a {
+  all: unset;
+  color: darkcyan;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hostel_container a:hover {
+  background-color: darkcyan;
+  color: white;
+}
+.hostel_wrapper {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  animation: wrapper_ani 0.5s ease-in-out normal forwards;
+}
+.hostel_wrapper span {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+@keyframes wrapper_ani {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

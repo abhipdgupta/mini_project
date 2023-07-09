@@ -1,0 +1,192 @@
+/* .container {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(161, 224, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container form {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 500px;
+    height: 80%;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    padding: 4rem .5rem .5rem .5rem;
+    position: relative;
+    background-color: white;
+
+    /* OLD */
+    /* -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75); */
+  
+    /* NEW */
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container form .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(126, 7, 237);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container form .title::before {
+
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    bottom: 0;
+    background-color: rgb(126, 7, 237);
+
+}
+
+.container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+
+}
+
+.container form .left,
+.right {
+
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+
+
+
+
+}
+
+.container form .left div,
+.right div {
+
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+
+
+
+}
+
+.container form .left div span,
+.contianer form .right div span ,form span {
+    padding: 0 20px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.container form input , .container form select{
+    margin: 10px 5px 10px 5px;
+    padding: 0 20px;
+    height: 40px;
+    border: 1px solid rgb(126, 7, 237);
+    border-radius: .2rem;
+    font-size: 1.4rem;
+    background-color: white;
+}
+
+
+
+.container form input:focus , .container form select:focus{
+    outline: 2px solid rgb(126, 7, 237);
+}
+
+.container form label {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: blueviolet;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    /* width: 290px; */
+
+}
+
+
+
+.container button {
+    all: unset;
+
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    padding: 15px 50px;
+    margin: 1rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.container button:hover {
+    background-color: white;
+    color: blueviolet;
+    outline: solid blueviolet;
+}
+
+.link{
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        height: auto;
+
+
+    }
+    .login_container{
+        height: 100dvh !important;
+    }
+    
+    
+    .container form {
+        padding: 100px 0;
+        min-width: 100%;
+        height: auto;
+
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .container .left,
+    .right {
+        width: 90%;
+    }
+    .container > form > label{
+        width: 70%;
+        text-align:left;
+        margin: 20px 0;
+    }
+
+}

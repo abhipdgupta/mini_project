@@ -1,0 +1,207 @@
+.profile_container {
+    width: 100vw;
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.profile_container a {
+    all: unset;
+    cursor: pointer;
+}
+
+.profile_wrapper {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 960px;
+
+
+}
+
+.profile_details {
+
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 1rem;
+
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+
+}
+
+.profile_img {
+    flex-basis: 20%;
+
+
+}
+
+.profile_img img {
+    min-width: 100px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100vw;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile_info span {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+
+.subjects_container,
+.exams_container,
+.resources_container {
+    /* border: 5px solid red; */
+    margin: 1rem 0;
+    animation: profile_animation .5s ease-in-out normal forwards;
+
+}
+
+.subjects_wrapper,
+.exams_wrapper,
+.resources_wrapper {
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: profile_animation .5s ease-in-out normal forwards;
+
+}
+
+.sec_title {
+    text-align: center;
+}
+
+.subject_item,
+.exam_item,
+.resource_item,.form_item {
+    flex-grow: 1;
+    min-width: 18rem;
+    height: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem;
+
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.75);
+
+    animation: profile_animation .5s ease-in-out normal forwards;
+    
+}
+
+.form_item form {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    font-weight: 700;
+   
+}
+
+.form_item form input[type=text] {
+    all: unset;
+    border-bottom: 1px solid rgb(0, 126, 128);
+    font-weight: normal;
+}
+
+.form_item form input[type=text]:focus {
+    outline: 1px solid rgb(0, 126, 128);
+
+}
+
+.form_item form input[type=file] {
+    display: none;
+
+}
+
+.inputfile {
+
+    color: white;
+    cursor: pointer;
+    background-color: rgb(0, 126, 128);
+    padding: .5rem;
+    width: max-content;
+    border-radius: 2rem;
+}
+
+.form_item form button {
+    all: unset;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(0, 126, 128);
+    padding: .5rem;
+    width: max-content;
+    border-radius: 2rem;
+}
+
+@keyframes profile_animation {
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.deleteIcon{
+    position: absolute;
+    width: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.deleteIcon img{
+    width: 100%;
+    object-fit: contain;
+}
+@media only screen and (max-width:760px) {
+
+
+    .profile_wrapper {
+        width: 95%;
+    }
+
+
+    .profile_details {
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .profile_img img {
+        width: 150px;
+        aspect-ratio: 1/1;
+
+    }
+
+    .profile_info {
+        gap: 1rem;
+    }
+}

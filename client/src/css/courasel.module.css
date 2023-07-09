@@ -1,0 +1,89 @@
+.courasel_container {
+
+    max-width: 100%;
+    width: 100vw;
+    aspect-ratio: 21/8;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.courasel_control_left,.courasel_control_right {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    /* z-index: -1; */
+}
+.courasel_control_left:hover,.courasel_control_right:hover {
+    background-color: rgba(0, 0, 0, 0.092);
+}
+.courasel_control_left{
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    z-index:1;
+}
+.courasel_control_right{
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+.courasel_control_left::after{
+    content: "\2770";
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+    
+}
+.courasel_control_right::after{
+    content: "\2771";
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+    color: white;
+}
+.courasel_control_left:hover::after,.courasel_control_right:hover::after{
+    font-size: 4rem;
+}
+
+.courasel_item_wrapper{
+    display: flex;
+    position: absolute;
+    /* transform: translateX(-100%); */
+    transition: transform 2s ease-in-out;
+    
+
+}
+
+.courasel_item{
+    width: 100%;
+    position: relative;
+    flex: 1 0 100%;
+    /* top: 0;  */
+   
+   
+}
+.courasel_item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 79%, rgba(0,0,0,1) 100%);
+}
+.courasel_item img{
+    width: 100%;
+    aspect-ratio: 21/8;
+    object-fit: cover;
+    
+}
+

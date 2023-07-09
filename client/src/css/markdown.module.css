@@ -1,0 +1,125 @@
+.markdown {
+    max-width: 900px;
+    width: 60%;
+    margin: 2rem auto 0 auto;
+    background-color: white;
+    /* OLD */
+    /* -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75); */
+  
+    /* NEW */
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    border-radius: .5rem;
+    
+  }
+  .markdown *{
+    animation: wrapper_ani  0.5s ease-in-out normal forwards;
+  }
+  .markdown h1,
+  .markdown h2,.markdown h3, .markdown a {
+    color: darkcyan;
+  }
+  
+  .markdown blockquote {
+    border-left: 1rem solid darkcyan;
+    
+  }
+  .markdown ol,.markdown ul{
+    padding: 1rem;
+  }
+  .markdown table{
+    margin: 1rem 0;
+    display: block;
+    width: 100%;
+    overflow-x:auto ;
+ 
+  }
+  .markdown tr {
+    border-top: 1px solid darkcyan;
+ 
+
+  }
+  .markdown p{
+    margin: 1rem;
+  }
+  .markdown th,
+  .markdown td {
+    padding: 6px 13px;
+    border: 1px solid darkcyan;
+    
+  }
+  
+  .markdown tr:nth-child(2n) {
+    background: #f6f8fa20;
+  }
+
+  .markdown a{
+    background-color: rgba(211, 211, 211, 0.355);
+    padding: 2px;
+
+  }
+  .markdown a:hover{
+    color: darkblue;
+  }
+  .markdown p img{
+    max-width: 400px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    padding: 1rem;
+    object-fit: contain;
+   
+  }
+  .head_img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: -4rem;
+    position: relative;
+    background-color: darkgray;
+
+  }
+  .head_img img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    padding: 0;
+  }
+  
+  .head_img::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+  
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0.95) 20%, rgba(255,255,255,0) 100%); 
+  }
+  @media (max-width: 1024px) {
+    .markdown {
+      width: 95%;
+      padding: .5rem;
+    }
+    .markdown h1,
+    .markdown h2,.markdown h3, .markdown a , .markdown p, .markdown li{
+      font-size: 90%;
+    }
+    
+
+  }
+  
+  @keyframes wrapper_ani {
+    from {
+      opacity: 0;
+      transform: translateY(-4rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,133 @@
+.all_notice_container>.notice_container:nth-child(odd) {
+    animation: news_comp_even .5s ease-in-out normal forwards;
+}
+
+.all_notice_container>.notice_container:nth-child(even) {
+    animation: news_comp_odd .5s ease-in-out normal forwards;
+}
+
+
+@keyframes news_comp_even {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes news_comp_odd {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.all_notice_container {
+    width: 100vw;
+    max-width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.notice_container {
+    min-height: 5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    position: relative;
+    border-radius: .5rem;
+    background-color: white;
+    /* OLD */
+    /* -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75); */
+  
+    /* NEW */
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.notice_container a{
+    all: unset;
+    cursor: pointer;
+    pointer-events: none;
+    
+}
+.notice_container a p{
+    color: red;
+    pointer-events: all;
+}
+.notice_container a span {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  
+
+}
+.notice_delete {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.notice_delete img {
+    width: 1rem;
+
+}
+
+.delete_popup {
+
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    border: 5px solid red;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.delete_popup button {
+    all: unset;
+    margin: 10px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+@media only screen and (max-width:720px) {
+    
+    .notice_container{
+        width: 95%;
+        margin: 0.5rem auto;
+    }
+    .notice_container a{
+       pointer-events: all;
+    }
+    .notice_container a span,p{
+        font-size: 1.2rem;
+    }
+}
